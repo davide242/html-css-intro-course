@@ -1,0 +1,90 @@
+
+.thumbnail{
+  width:100%;
+  /*non metto più la larghezza in px ma in percentuale
+  rispetto alla sua colonna*/
+}
+
+
+.video-title{
+  font-size:14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture{
+  border-radius: 25px;
+  width:36px;
+  /*width:100%;
+  così l'immagine occupa il 100% del suo container, la
+  cui dimensione abbiamo stabilito col div:channel-picture*/
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-stats,.video-author{
+  font-size:12px;
+  color:rgb(96,96,96);
+}
+.video-author{
+  margin-bottom:4px;
+}
+/*creo una div che sarà la griglia per i miei 
+video-prewiew, così la loro dimensione si adatterà 
+alla pagina*/
+
+.video-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 30px;
+  /*inheritance, lo stile dell'elemento padre passa al figlio
+  N.B. non vale per tutti gli stili, in genere vale per gli 
+  stili di testo */
+  text-decoration: underline;
+}
+
+
+/*media query*/
+/*il codice css qui dentro si attiverà solo 
+se la dimensione della finestra è di 750px o meno*/
+  @media  (max-width: 750px) {
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+/*il codice css qui dentro si attiverà solo 
+se la dimensione della finestra è tra 751px e 999px*/
+  @media (min-width: 751px) and (max-width:999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*il codice css qui dentro si attiverà solo 
+se la dimensione della finestra è di 1000px o più*/
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+
+.video-time{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color:white;
+  position:absolute;
+  bottom:8px;
+  right: 5px;
+}
