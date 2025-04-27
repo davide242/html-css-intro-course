@@ -1,0 +1,121 @@
+<!--gestione del testo 
+(font, grandezza, colore etc...)-->
+
+<style>
+
+  p{
+    font-family: Arial;
+    margin-top:0;
+    margin-bottom:0;
+  }
+
+  /*css specificty: 
+    sespecifico più volte la stessa propr. in css
+    viene selezionata quella più spcifica ovvero 
+    quella nel selettore (p, .video-title, etc..)
+    delle classi (tra p e .video-title sceglie la 
+    seconda)*/
+  .video-title{
+    font-size:18px;
+    font-weight: bold;
+    /*per dare ad un testo uno spazio specifico 
+    in cui stare uso width*/
+    width: 280px;
+    /*per impostare lo spazio tra le righe*/
+    line-height: 24px;
+    margin-bottom: 5px;
+
+    /*per centrare il testo nella pagina*/
+    /*text-align: center;*/
+  }
+  /*--DI DEFAULT I PARAGRAFI <p> NASCONO CON
+    MARGINE SOPRA E SOTTO DOBBIAMO RIMUOVERLI E 
+    INSERIRNE DI NUOVI NOI */
+
+  .video-stats{
+    font-size:14px;
+    color:rgb(99, 97, 97);
+    margin-top:5;
+    margin-bottom: 20px;
+  }
+  .video-author{
+    font-size:14px;
+    color:rgb(99, 97, 97);
+    margin-bottom: 20px;
+  }
+  .video-description{
+    font-size:14px;
+    color:rgb(99, 97, 97);
+    width: 280px;
+    line-height: 22px;
+    margin-bottom: 100px;
+  }
+
+  .apple-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .span-example{
+    font-family: 'Times New Roman', Times, serif;
+    color:purple;
+    margin-right: 15px;
+  }
+  /*con i margini do più spazio tra le parole*/
+  .shop-now{
+    transition: text-decoration 0.15s;
+    cursor:pointer;
+
+  }
+
+  .shop-now:hover{
+    text-decoration: underline;
+
+  }
+
+</style>
+
+
+
+
+
+<p class="video-title">
+  Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+<p class="video-stats">
+  3.4M Wiews &#183; 6 months ago
+</p>
+<!--per aggiungere caratteri speciali, chiamati 
+entities uso la & seguita da qualcosa, si cercano 
+su internet di solito-->
+<p class="video-author">
+  Marques Brownlee &check;
+</p>
+
+<p class="video-description">
+  Talking tech and AI on the heels of Google I/O. 
+  Also a daily driver phone reveal from Google's CEO.
+   Shoutout to Sundar!
+</p>
+
+<p class="apple-text">
+  Shop early for the best selection of holiday favourites.
+  <span class="shop-now">Shop now &#62</span>
+</p>
+
+
+<p >
+  <span class="span-example">Shop early</span> for 
+  <strong>best selection</strong>  of holiday favourites.
+  <u>Shop now &#62</u>
+</p>
+<!--con i text element possiamo modificare pezzi di 
+testo specifici-->
+
+<!--con span da solo non faccio niente ma se metto una 
+classe posso modificare solo un pezzo di testo in un 
+paragrafo con css-->

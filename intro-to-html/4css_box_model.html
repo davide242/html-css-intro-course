@@ -1,0 +1,101 @@
+
+<style>
+  button{
+    cursor: pointer;
+    vertical-align: top;
+    /*così i bottoni sono allineati non secondo
+    il testo al loro interno ma secondo il top 
+    della pagina*/
+    margin-right:8px;
+  }
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color:white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:16px;
+    padding-right:16px;
+    border-radius:3px;
+    
+    /*con margin posso aggiungere spazio in tutte
+    e 4 le direzioni intorno al bottone*/
+    
+    transition:opacity 0.15s;
+    
+  }
+
+  .subscribe-button:hover{
+    opacity: 0.8;
+  }
+  
+
+  .subscribe-button:active{
+    opacity: 0.65;
+  }
+  
+
+  .join-button{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 162, 255);
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(0, 162, 255);
+    /*height: 35px;
+    width: 62px;*/
+    /*di solito non si usa mettere alteezza e largh.
+    ma si levano e si aumenta il margine interno dei
+    bottoni*/
+    /*CHIAMATO PADDING*/
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left:16px;
+    padding-right:16px;
+
+    border-radius: 2px;
+    
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .join-button:hover{
+    background-color: rgb(0, 162, 255);
+    color:white;
+  }
+  .join-button:active{
+    opacity: 0.6;
+  }
+
+  .tweet-button{
+    background-color:rgb(0, 149, 255);
+    color:white;
+    border:none;
+    height:36px;
+    width: 70px;
+    border-radius: 18px;
+    
+    font-weight: bold;
+    font-size:15px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15) ;
+    
+  }
+  
+</style>
+
+
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+
+<button class="tweet-button">
+  Tweet
+</button>

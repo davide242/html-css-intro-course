@@ -1,0 +1,93 @@
+<!--iniziamo con css-->
+<style>
+  button{
+    cursor: pointer;
+  }
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color:white;
+    border: none;
+    height: 35px;
+    width: 110px;
+    border-radius:3px;
+    margin-right: 10px;
+    transition:opacity 0.15s;
+    /*con transition specifico l'azione e quanto 
+    tempo ci deve mettere a farla*/ 
+  }
+  .subscribe-button:hover{
+    opacity: 0.8;
+  }
+  /*con :hover (pseudo-classe)andiamo a lavorare su quello che 
+  succede quando andiamo col mouse su un bottone*/
+
+  .subscribe-button:active{
+    opacity: 0.65;
+  }
+  /*con active decido 
+  cosa succede quando clicco sul bottone*/
+
+  .join-button{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 162, 255);
+    border-style: solid;
+    border-width: 2px;
+    color: rgb(0, 162, 255);
+    height: 35px;
+    width: 62px;
+    border-radius: 2px;
+    margin-right: 10px;
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .join-button:hover{
+    background-color: rgb(0, 162, 255);
+    color:white;
+  }
+  .join-button:active{
+    opacity: 0.6;
+  }
+
+  .tweet-button{
+    background-color:rgb(0, 149, 255);
+    color:white;
+    border:none;
+    height:36px;
+    width: 70px;
+    border-radius: 18px;
+    /*Per avere bordi completamente tondi imposto
+    il raggio pari alla metà di altezza o larghezza
+    (il più piccolo fra i due)*/
+    font-weight: bold;
+    font-size:15px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15) ;
+    /*1 num: pos. orizz dell'ombra
+    2 num:pos verticale dell'ombra
+    3 num: blur
+    4 num: colore, con rgba aggiungo l'opacità(0<=op<=1)*/
+  }
+  
+</style>
+<!--button è un css selector ci dice quale elemento 
+nella pagina stiamo puntando, se scrivo solo button
+cambio il colore di TUTTI i bottoni sulla pagina-->
+
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+<!--con la class posso essere più specifico in css
+uso .class-name-->
+
+<button class="join-button">
+  JOIN
+</button>
+
+
+<button class="tweet-button">
+  Tweet
+</button>
