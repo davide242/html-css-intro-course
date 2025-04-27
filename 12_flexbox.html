@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--flexbox è un alternativa alla grid, più flessibile-->
+<html>
+  <head>
+    <title> Flexbox Practice</title>
+  </head>
+
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      display: flex;
+      flex-direction: row;">
+      <!--così allineo orizzontalmente i due elementi
+      anche se sono block elements come grid-->
+      <!--è più flessibile poiche non devo specificare
+      il num di colonne come con css grid-->
+      <div style="background-color: lightblue;">
+        Div 1 text
+      </div>
+      <div style="background-color: lightpink;">
+        Div 2
+        <p>
+          se metto un altro paragrafo i vari div mantengono
+          l'allineamento verticale
+        </p>
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;">
+      <div style="
+      background-color: lightblue; 
+      width:100px;">
+        100px
+      </div>
+      <div style="
+        background-color: lightpink;
+        flex:1">
+        flex:1 (è come 1fr su css grid)
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;">
+      <!--la larghezza dei div è specifica per ognuno di 
+      essi quindi se li sposto mantengono la loro larghezza-->
+      <div style="
+        background-color: lightblue; 
+        width:100px;">
+        100px
+      </div>
+      <div style="
+        background-color: lightpink;
+        flex:1">
+        flex:1 (è come 1fr su css grid)
+      </div>
+      <div style="
+        background-color: lightgreen; 
+        flex:2;">
+        flex:2 (il doppio di flex:1)
+      </div> 
+    </div>
+
+    <div style="
+      margin-top: 20px;
+      height:70px;
+      border-width:1px;
+      border-style: solid;
+      border-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;">
+      <!--con justify-content decidiamo in quale posizione
+      mettere nella flexbox i vari elementi-->
+      <div style="
+        background-color: lightblue; 
+        width:100px;">
+        100px
+      </div>
+      <div style="
+        background-color: lightpink;
+        width:100px;">
+        100px 
+     </div>
+      <div style="
+        background-color: lightgreen; 
+        width:100px;">
+        100px
+      </div> 
+    </div>
+
+    <div style="
+      margin-top: 20px;
+      height:70px;
+      border-width:1px;
+      border-style: solid;
+      border-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;">
+      <!--con space between gli elementi sono divisi in modo
+      da avere spazio uguale tra loro-->
+      <div style="
+        background-color: lightblue; 
+        width:100px;">
+        100px
+      </div>
+      <div style="
+        background-color: lightpink;
+        width:100px;">
+        100px 
+     </div>
+      <div style="
+        background-color: lightgreen; 
+        width:100px;">
+        100px
+      </div> 
+    </div>
+
+    <div style="
+      margin-top: 20px;
+      height:70px;
+      border-width:1px;
+      border-style: solid;
+      border-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items:center">
+      <!--"align-items" serve per allineare verticalmente 
+      gli elementi, di default è stretch (gli elementi 
+      si allungano e occupano tutto lo spazio che hanno )-->
+      <!--con "align-items:start" si allineano sopra e 
+      occupano  solo lo spazio che gli serve
+      poi c'è center e end -->
+
+      <div style="
+        background-color: lightblue; 
+        width:100px;">
+        100px
+      </div>
+      <div style="
+        background-color: lightpink;
+        width:100px;">
+        100px 
+     </div>
+      <div style="
+        background-color: lightgreen; 
+        width:100px;">
+        100px
+      </div> 
+    </div>
+
+
+  </body>
+
+</html>

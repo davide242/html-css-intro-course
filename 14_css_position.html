@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--CSS POSITION: proprietà degli elementi in css
+utile per mettere elementi sopra altri o lasciarli fissi
+durante  lo scorrimento-->
+<html>
+  <head>
+    <title>
+      Position Practice
+    </title>
+  </head>
+  <body style="
+  height: 2000px;
+  padding-top:60px;
+  padding-left: 80px;
+  ">
+  <!--per evitare che l'header o la sidebar nascondano
+  dei div metto dello  spazio tra i due, per farlo metto 
+  del padding nel BODY ELEMENT -->
+
+    <div style="
+    background-color: black;
+    color:white;
+    position: fixed;
+    left:0px;
+    right: 0px;
+    top:0px;
+    height: 50px;
+    ">
+    <!--position:fixed i div resta fermo durante lo 
+    scorrimento, in questo caso resta in alto
+    come se fosse su un altro piano rispetto ad altri div-->
+    <!--con top decido la distanza dal top della pagina
+    che deve avere il div -->
+    <!--stessa cosa con left,rigth e bottom...
+    Se metto due direzioni opposte l'elemento si
+    ALLUNGA per rendere entrambe vere-->
+    Header
+    </div>
+
+
+    <div style="
+    background-color: green;
+    color:white;
+    position:fixed;
+    left:0;
+    bottom:0;
+    top:50px;
+    width:72px;
+    ">
+      sidebar
+    </div>
+
+
+    <div style="
+    background-color:lightblue;
+    height: 200px;
+    width:200px;
+    position:static;
+    "><!--position:static è la posizione di default-->
+    div 1
+    </div>
+    <div style="
+    background-color:lightpink;
+    height: 200px;
+    width:200px;
+    ">div 2
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--in html ci sono 3 tipi di elementi
+    - block element(come p):
+        occupano l'intera linea
+    - inline-block element(input,img): 
+        occupa lo spazio che gli serve e basta-
+    - inline-element(strong,span): 
+        compaiono in altre linee di testo-->
+        
+<!--con display in css trasformiamo elementi da un tipo all'altro-->
+<html>
+  <head>
+    <title>
+      Youtube.com Clone
+    </title>
+    <style>
+      .thumbnail{
+        width:300px;
+        display: block;
+        /*così occupa l'intera linea*/
+      }
+      .search-bar{
+        font-size: 15px;
+        margin-left: 12px;
+      }
+      .video-title{
+        width:300px;
+      }
+      
+      .video-stats,.video-author{
+        /*display: inline-block;
+        così non occupano più l'intera riga e stanno vicini*/
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai! 
+    </p>
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago 
+    </p>
+
+    
+  </body>
+</html>
